@@ -53,3 +53,24 @@ body {
 	top: 167px;
 	left: -212px;
 }
+.instructions {
+	height: 500px;
+	width: 700px;
+	position: absolute;
+	left: 670px;
+	font-size: 28px;
+	line-height: 150%;
+	font-family: cursive;
+	text-transform: uppercase;
+}
+
+.click-instruction {
+	width: 315px;
+	margin-top: 75px;
+}
+
+.x-instruction {
+	width: 310px;
+	margin-top: 80px;
+	margin-left: 270px;
+}
