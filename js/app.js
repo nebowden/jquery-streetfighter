@@ -1,4 +1,24 @@
 $(document).ready(function(){
+
+	$(this).keydown(function (event){
+		if(event.which==88)
+		{
+			event.stopPropagation();
+			$(".ryu-still").hide();
+			$('.ryu-ready').hide();
+			$('.ryu-throwing').hide();
+			$('.hadouken').hide();
+			$(".ryu-cool").show();
+		}
+	})
+	.keyup(function (event){
+		if(event.which==88)
+		{
+			$(".ryu-still").show();
+			$(".ryu-cool").hide();	
+		}
+	});
+
 	$(".ryu").mouseenter(function() {
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
@@ -21,13 +41,9 @@ $(document).ready(function(){
 			}
 		);
 	})
-		// console.log('mousedown');
-		// play hadouken sound
 	.mouseup(function() {
 		$(".ryu-ready").show();
 		$(".ryu-throwing").hide();
-		// console.log('mouseup');
-		//ryu goes back to his ready position
 	});
 })
 
